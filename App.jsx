@@ -2,8 +2,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import AddTasks from './AddTasks'
-import Listiteams from './Listiteams'
-
+import Listiteams from "./Listiteams"
 function App() {
   const [newtask, setNewTask] = useState('')
   const [todos, setTodos] = useState(
