@@ -1,7 +1,7 @@
 import { useContext, useRef } from "react"
 import { themeDark } from "./App"
 
-export default function AddTasks({handleAdd}) {
+export default function UpdateTask({handleUpdateitem,valUpdate}){
     const taskField=useRef();
     const darktheme=useContext(themeDark);
     const styledark={
@@ -39,9 +39,9 @@ export default function AddTasks({handleAdd}) {
     }
     return (
         <div className='row' style={styledark} >
-            <label htmlFor="newiteam"  style={styles.label}>task</label>
-            <input type="text" style={styles.input} placeholder="Write new task ........." ref={taskField} id="newiteam" />
-            <button type="submit" style={styles.button}  onClick={()=>handleAdd(taskField.current)}>add</button>
+            <label htmlFor="newiteam"  style={styles.label}>update task</label>
+            <input type="text" style={styles.input} defaultValue={valUpdate.val} ref={taskField} id="newiteam" />
+            <button type="submit" style={styles.button}  onClick={()=>handleUpdateitem(taskField.current)}>Update</button>
         </div>
     )
 }
