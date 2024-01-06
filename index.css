@@ -1,15 +1,15 @@
-
-.col-md-2{
+.col-md-2 {
   max-width: 200px;
 }
-.rownav{
+
+.rownav {
   padding: 21px;
   justify-content: space-between;
 }
-.logoname{
+
+.logoname {
   font-size: 24px;
 }
-
 
 body {
   margin: 0;
@@ -27,14 +27,15 @@ h2 {
   text-transform: uppercase;
 }
 
-ul li {
-  list-style-type: "✍️";
+.list li {
+
   padding: 17px 6px 2px 11px;
 }
 
-input::placeholder{
+input::placeholder {
   padding: 0px 10px;
 }
+
 input[type="checkbox"] {
   margin-right: 15px;
 }
@@ -49,14 +50,19 @@ h1 {
   margin-left: 15px;
 }
 
+button {
+  transition: all 0.25s;
+}
+
 button:hover {
-  border-color: #646cff;
+  background-color: dimgrey;
 }
 
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
 .iteam-list {
   display: flex;
   justify-content: space-between;
@@ -66,47 +72,54 @@ button:focus-visible {
 
 
 @media (max-width:384px) {
-  p{
-    min-width:150px ;
-    word-wrap: break-word; 
+  p {
+    min-width: 150px;
+    word-wrap: break-word;
   }
-  
+
 }
+
 @media (min-width:385px) {
-  p{
-    min-width:200px ;
-    word-wrap: break-word; 
+  p {
+    min-width: 200px;
+    word-wrap: break-word;
   }
-  
+
 }
+
 @media (max-width:767px) {
-  p{
-    max-width:300px ;
-    word-wrap: break-word; 
+  p {
+    max-width: 300px;
+    word-wrap: break-word;
   }
 }
+
 @media (max-width:900px) {
-  p{
-    max-width:443px ;
-    word-wrap: break-word; 
+  p {
+    max-width: 443px;
+    word-wrap: break-word;
   }
 }
+
 @media (min-width:900px) {
   .iteam-list:hover {
     background-color: rgb(117, 117, 117);
   }
-  p{
-    max-width:600px ;
-    word-wrap: break-word; 
+
+  p {
+    max-width: 600px;
+    word-wrap: break-word;
   }
 }
+
 @media (max-width:575px) {
-  .content{
+  .content {
     padding: 10px;
   }
-  p{
-    max-width:413px ;
-    word-wrap: break-word; 
+
+  p {
+    max-width: 413px;
+    word-wrap: break-word;
   }
-  
+
 }
